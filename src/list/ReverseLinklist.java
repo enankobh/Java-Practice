@@ -1,5 +1,6 @@
 package list;
 
+import java.util.Collections;
 import java.util.LinkedList;
 
 public class ReverseLinklist {
@@ -11,6 +12,11 @@ public class ReverseLinklist {
 		System.out.println(linkedList);
 		System.out.print("After reversal----->  ");
 		System.out.println(reverseLinkedList(linkedList));
+		System.out.print("Before reversal---->  ");
+		System.out.println(linkedList);
+		Collections.reverse(linkedList);
+		System.out.print("After reversal----->  ");
+		System.out.println(linkedList);
 	}
 	public static LinkedList<String> reverseLinkedList(LinkedList<String> linkedList){
 		int listSize = linkedList.size();
