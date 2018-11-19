@@ -56,12 +56,17 @@ public class Arraylist {
 		arrList.add("F");
 		arrList.remove("A");
 		/* The following code will generate concurrent modification Exception*/
-		/*ListIterator<String> i = arrList.iterator();
-		while(i.hasNext()) {
-			String ele = i.next();
-			System.out.println(i.next());
-			arrList.remove(ele);
+		ListIterator<String> itr = arrList.listIterator();
+		System.out.println("------------------------------------------------------------------------------------------------");
+		System.out.println(arrList);
+		/*This is one way to remove the elements using iterator*/
+		/*while(itr.hasNext()) {
+			String ele = itr.next();
+			//System.out.println(itr.next());
+			itr.remove();
 		}*/
+		System.out.println(arrList);
+		System.out.println("------------------------------------------------------------------------------------------------");
 		/*
 		 * This is one of the way to stop this exception
 		 * */
