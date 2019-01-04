@@ -94,8 +94,7 @@ public class Child extends Parent{
 	 * */
 	@Override
 	public void abstractMethod() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Inside Child abstractMethod");
 	}
 	
 	/**
