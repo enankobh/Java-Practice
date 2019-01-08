@@ -1,4 +1,4 @@
-package methodoverloading;
+package methodoverriding;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

@@ -1,10 +1,10 @@
-package methodoverloading;
+package methodoverriding;
 
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MethodOverloading {
+public class MethodOverriding {
 
 	public static void main(String[] args) throws FileNotFoundException {
 		Child p = new Child();
