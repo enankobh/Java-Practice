@@ -1,0 +1,18 @@
+server:
+  port: 8087
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    healthcheck:
+      enabled: true  
+  instance:
+    preferIpAddress: true
+ribbon:
+  eureka:
+    enabled: true
+management:
+ endpoints:
+  web:
+   exposure:
+    include: hystrix.stream
